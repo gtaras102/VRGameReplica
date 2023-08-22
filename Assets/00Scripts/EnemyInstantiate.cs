@@ -4,17 +4,34 @@ using UnityEngine;
 
 public class EnemyInstantiate : MonoBehaviour
 {
-    public GameObject Enemy;
+    public GameObject enemyPrefab;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(Enemy);
+        Spawn();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void Spawn()
+    {
+        Instantiate(enemyPrefab, transform.position, transform.rotation);
+    }
+
+
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Destroy")
+        {
+            Spawn();
+            Debug.Log("Collision detected");
+        }
     }
 }

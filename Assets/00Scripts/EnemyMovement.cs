@@ -5,15 +5,21 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    private Transform target;
+    private GameObject player;
+
     [SerializeField] float movementSpeed = 4f;
     [SerializeField] float rotationalDamp = .5f;
     [SerializeField] float raycastoffset = 2.5f;
-    [SerializeField] float detectionDistance = 20f;
-        
+    [SerializeField] float detectionDistance = 10f;
 
-    
-    void Update()
+    public void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        target = player.GetComponent<Transform>();
+    }
+
+    void FixedUpdate()
     {
         Pathfinding();
         Turn();
@@ -69,14 +75,23 @@ public class EnemyMovement : MonoBehaviour
 
         if (raycasroffset != Vector3.zero) 
         { 
-            transform.Rotate(raycasroffset * 5f * Time.deltaTime);
+            transform.Rotate(raycasroffset * 10f * Time.deltaTime);
         }
         else
         {
             Turn();
+           
         }
 
 
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            movementSpeed = 1f;
+            Pathfinding();
+        }
+    }
 }
