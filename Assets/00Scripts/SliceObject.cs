@@ -6,16 +6,23 @@ using UnityEngine.InputSystem;
 
 public class SliceObject : MonoBehaviour
 {
+    [SerializeField] GameObject particle;
+
     public Transform startSlicePoint;
     public Transform endSlicePoint;
     public VelocityEstimator velocityEstimator; 
     public LayerMask slicebleLayer;
+    public AudioSource clip;
 
     public Material crossSectionMaterial;
     public float cutForce = 2000f;
 
-   
-    
+
+    private void Start()
+    {
+        clip = GetComponent<AudioSource>();
+    }
+
     void FixedUpdate()
     {
         bool hasHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, slicebleLayer);
@@ -34,6 +41,8 @@ public class SliceObject : MonoBehaviour
         planeNormal.Normalize(); 
         
         SlicedHull hull = target.Slice(endSlicePoint.position, planeNormal);
+        clip.Play();
+        GameObject explosion = Instantiate(particle, transform.position, transform.rotation);
 
         if (hull != null)
         {
