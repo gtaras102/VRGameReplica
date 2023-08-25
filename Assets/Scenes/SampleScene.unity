@@ -1155,12 +1155,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75223552}
   m_LocalRotation: {x: 0.9997639, y: -0, z: -0, w: -0.021728905}
-  m_LocalPosition: {x: 0.261, y: 0.709, z: 0.14000049}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.33799982, y: -0.49470583, z: -0.16999817}
+  m_LocalScale: {x: 1, y: 0.58869284, z: 0.9986804}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1328710564}
-  m_RootOrder: 3
+  m_Father: {fileID: 103791239}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 182.49, y: 0, z: 0}
 --- !u!65 &75223554
 BoxCollider:
@@ -1192,7 +1192,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -1338,7 +1338,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.731, z: 0}
   m_LocalScale: {x: 1, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 458045947}
+  - {fileID: 75223553}
   m_Father: {fileID: 1328710564}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2132,6 +2134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!1001 &213643692
@@ -2735,6 +2742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
@@ -5290,12 +5302,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458045946}
   m_LocalRotation: {x: 0.9997639, y: -0, z: -0, w: -0.021728905}
-  m_LocalPosition: {x: -0.19, y: 0.709, z: 0.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.36399984, y: -0.4947058, z: -0.16999817}
+  m_LocalScale: {x: 1, y: 0.58869284, z: 0.9986804}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1328710564}
-  m_RootOrder: 2
+  m_Father: {fileID: 103791239}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 182.49, y: 0, z: 0}
 --- !u!114 &458045948
 MonoBehaviour:
@@ -5314,7 +5326,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -5645,6 +5657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
@@ -7845,7 +7862,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -8830,7 +8847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1367126113459182, guid: a8a95b589c673c247b4fec182cfe30f0, type: 3}
       propertyPath: m_TagString
-      value: Destroy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4469104948323940, guid: a8a95b589c673c247b4fec182cfe30f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -8951,7 +8968,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -11842,6 +11859,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!1 &996519891
@@ -13982,6 +14004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!4 &1230129385 stripped
@@ -15146,8 +15173,6 @@ Transform:
   m_Children:
   - {fileID: 847685102}
   - {fileID: 103791239}
-  - {fileID: 458045947}
-  - {fileID: 75223553}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17467,6 +17492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!4 &1513583700 stripped
@@ -17557,6 +17587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
@@ -18952,6 +18987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!1 &1668398935 stripped
@@ -20080,6 +20120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
 --- !u!1001 &1775784179
@@ -20393,7 +20438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1367126113459182, guid: a8a95b589c673c247b4fec182cfe30f0, type: 3}
       propertyPath: m_TagString
-      value: Destroy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4469104948323940, guid: a8a95b589c673c247b4fec182cfe30f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -23792,6 +23837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ResinPaintModel (2) Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704861266497913173, guid: 98d5803dc8f89e74b9c86ea0992a6304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d5803dc8f89e74b9c86ea0992a6304, type: 3}
